@@ -6,15 +6,19 @@
   font-family: cursive;
 }
 
-.container, section {height: 100vh;}
-
-a{color: black;}
-a:hover{
-  color: white;
-  text-decoration: none;
+.container, section {
+  width: 100%;
+  height: 100vh;
 }
 
 .is--hidden{display: none;}
+
+html{overflow-x: hidden;}
+
+body{
+    overflow-x: hidden;
+    position: relative;
+}
 
 
 @media only screen and (min-width: 400px) { /* modelled using desktop in Chrome */
@@ -42,18 +46,4 @@ a:hover{
   }
 
   .mobile--only{display: none;}
-}
-
-
-@media only screen and (max-width: 400px) { /* modelled using iPhone SE in Chrome */
-  .desktop--only{display: none;}
-
-  html{overflow: hidden;}
-
-  body{
-      overflow: hidden;
-      position: relative;
-  }
-
-  .container {overflow-x: hidden; overflow-y: hidden;}
 }
