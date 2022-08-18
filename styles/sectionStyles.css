@@ -4,14 +4,6 @@
   position: relative;
 }
 
-#page1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  font-family: 'oleo script', verdana;
-}
-
 .pageTitle{
   position:absolute;
   width: 100%;
@@ -43,6 +35,12 @@
     transform: translateY(-50%);
     top: 50%;
   }
+
+  #page1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 400px) { /* modelled using iPhone SE in Chrome */
@@ -50,4 +48,10 @@
   .pageTitle{top: 40%;}
   
   html, body{overflow: hidden;}
+
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
