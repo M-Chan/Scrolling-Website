@@ -47,3 +47,7 @@ body{
 
   .mobile--only{display: none;}
 }
+
+@media only screen and (max-width: 400px) { /* modelled using iPhone SE in Chrome */
+  .desktop--only{display: none;}
+}

@@ -4,7 +4,7 @@
   position: relative;
 }
 
-section{
+#page1{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,14 @@ section{
 
 
 @media only screen and (min-width: 400px) { /* modelled using desktop in Chrome */
-  section {font-size: 13vh;}
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'oleo script', verdana;
+    font-size: 13vh;
+  }
   .pageTitle{
     position: absolute;
     transform: translateY(-50%);
@@ -41,4 +48,6 @@ section{
 @media only screen and (max-width: 400px) { /* modelled using iPhone SE in Chrome */
   section {font-size: 12vw;}
   .pageTitle{top: 40%;}
+  
+  html, body{overflow: hidden;}
 }
